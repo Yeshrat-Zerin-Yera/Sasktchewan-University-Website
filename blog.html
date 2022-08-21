@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Saskatchewan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+<body>
+    <!--Blog Header Section-->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/home-icon.png" alt="Home icon"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Certificates and Online Courses</h1>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog">
+        <div class="row">
+            <div class="blog-left-col">
+                <img src="images/certificate.jpg" alt="Image a three professional person">
+                <h2>Certificates and Online Courses</h2>
+                <p>The College of Arts and Science offers certificate options in a variety of subject areas that can be
+                    added to your degree program or taken on a stand-alone basis. College of Arts and Science
+                    certificates are accredited academic credentials, and the certificate programs are open to new
+                    students and to current students enrolled in any University of Saskatchewan college or school.</p>
+                <br>
+                <p>Set yourself apart at graduation with this unique opportunity coordinated through SENS. The
+                    Certificate
+                    in Sustainability enriches most undergraduate degree programs by concentrating on
+                    sustainability-related
+                    concepts and practices. Students will gain an understanding of how to integrate human-environmental
+                    systems within our current reality and how to critically evaluate sustainability efforts. This
+                    certificate works well in an interdisciplinary context; consider adding it to a degree in computing
+                    science, business, or engineering for maximum flexibility.</p><br>
+                <p>The SENS tuition rates for 2022-23 are expected to increase slightly across the board (all students,
+                    all
+                    programs). The international student differential for USask will likely also change for both PhD and
+                    Master’s students. For up to date details, please contact carolyn.pytlyk@usask.ca. </p>
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form action="" class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="btn-first btn-second">Post Comment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right-col">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>30</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>50</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>64</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>84</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Social media is another huge channel that your audience will use to acquire more information about your<br>
+            school. Make it easy for them to find you on each social media medium.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+
+    <!-- Java Script for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("nav-links");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
